@@ -1,0 +1,12 @@
+.container {
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.filters {
+    gap: var(--small-gap);
+}
+
+.select {
+    min-width: 150px;
+}

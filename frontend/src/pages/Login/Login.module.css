@@ -1,0 +1,46 @@
+.wrapper {
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    padding: 40px 0;
+    margin: 0 auto;
+
+    grid-template-rows: 44px auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: var(--big-gap);
+}
+
+.outbox {
+    height: 100%;
+    max-width: 500px;
+    min-width: 500px;
+    padding: 30px 50px;
+
+    background-color: #F2F2F2;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: var(--small-gap);
+}
+
+.form {
+    display: grid;
+    gap: var(--small-gap);
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,29 @@
+.navbar {
+    z-index: 1;
+    height: var(--header-navbar-height);
+    grid-template-columns: 20% auto 20%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 var(--side-margin);
+}
+
+.links {
+    gap: var(--big-gap);
+}
+
+.links a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.loginBtn {
+    margin-left: auto;
+}
+
+.avatar {
+    margin-left: auto;
+    cursor: pointer;
+    outline-width: 1px;
+    outline-color: var(--equator-green);
+    outline-style: solid;
+}

@@ -1,0 +1,30 @@
+.container {
+    gap: var(--big-gap);
+    padding: 15px;
+}
+
+.request {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+    padding: 24px 32px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+}
+
+.tour {
+    flex-direction: column;
+    gap: 8px;
+}
+.tour h3 {
+    color: var(--equator-green);
+}
+
+.buttons {
+    gap: 8px;
+    margin: auto auto 0 0;
+}
+
+.user {
+    flex-direction: column;
+    gap: 8px;
+}

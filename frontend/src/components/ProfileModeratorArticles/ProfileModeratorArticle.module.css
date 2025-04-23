@@ -1,0 +1,15 @@
+.container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+    padding: 24px 32px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+}
+
+.info {
+    flex-direction: column;
+    gap: 8px;
+}
+.info button {
+    margin-top: auto;
+}

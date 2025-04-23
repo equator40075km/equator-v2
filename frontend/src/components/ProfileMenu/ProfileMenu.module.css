@@ -1,0 +1,8 @@
+.container {
+    gap: var(--gap);
+    margin-bottom: auto;
+}
+
+.buttons {
+    gap: var(--small-gap);
+}

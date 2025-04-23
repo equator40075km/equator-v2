@@ -1,0 +1,5 @@
+.container {
+    gap: var(--huge-gap);
+    grid-template-columns: 280px auto;
+    margin-bottom: calc(var(--huge-gap) - var(--gap));
+}

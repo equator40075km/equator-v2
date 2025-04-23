@@ -1,0 +1,25 @@
+.container {
+    grid-template-rows: 50px auto;
+    gap: var(--huge-gap);
+    margin-bottom: calc(var(--huge-gap) - var(--gap));
+}
+
+.warning {
+    height: 100%;
+    max-width: 100vw;
+    width: 100vw;
+    margin-left: calc(-1 * 100vw * 0.1);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--chakra-colors-yellow-200);
+}
+
+.form {
+    padding: 64px 25%;
+    gap: var(--small-gap);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: var(--border-radius);
+    border-color: rgba(var(--green-values), 0.1);
+}

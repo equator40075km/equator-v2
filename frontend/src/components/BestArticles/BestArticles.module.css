@@ -1,0 +1,11 @@
+.container {
+    gap: var(--small-gap);
+    grid-template-rows: 40px 700px;
+}
+
+.articles {
+    height: 100%;
+    gap: var(--gap);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 55% auto;
+}

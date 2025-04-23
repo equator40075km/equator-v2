@@ -1,0 +1,10 @@
+.container {
+    flex-direction: column;
+    gap: var(--gap);
+    overflow-x: hidden;
+}
+
+.content {
+    min-height: calc(100vh - var(--header-navbar-height));
+    margin: 0 var(--side-margin);
+}

@@ -1,0 +1,28 @@
+:root {
+    --header-navbar-height: 10vh;
+    --header-content-height: 70vh;
+
+    --green-values: 3, 86, 41;
+    --equator-green: rgb(var(--green-values));
+    --equator-green-hover: rgb(3, 142, 66);
+    --equator-black: rgb(15, 23, 31);
+    --equator-darkgray: rgb(83, 86, 90);
+    --equator-gray: rgb(180, 180, 180);
+    --equator-lightgray: rgb(234, 234, 234);
+
+    --btn-border-radius: 50px;
+    --border-radius: 20px;
+
+    --gap: 24px;
+    --huge-gap: 64px;
+    --big-gap: 48px;
+    --small-gap: 16px;
+
+    --side-margin: 10%;
+}
+
+/* @media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+} */

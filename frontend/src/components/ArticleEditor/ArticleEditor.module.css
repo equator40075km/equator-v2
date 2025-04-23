@@ -1,0 +1,14 @@
+.editor {
+    width: 100%;
+}
+
+.preview {
+    padding: var(--small-gap) 0;
+    gap: var(--gap);
+    border-top: 1px solid var(--equator-green);
+    border-bottom: 1px solid var(--equator-green);
+}
+.preview img {
+    width: 100%;
+    object-fit: cover;
+}

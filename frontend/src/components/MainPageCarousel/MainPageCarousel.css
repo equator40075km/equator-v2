@@ -1,0 +1,24 @@
+.main-carousel {
+    height: 600px;
+    overflow: hidden;
+}
+
+.main-carousel .slick-slider {
+    height: 100%;
+}
+
+.main-carousel div:not([class]) {
+    height: 100%;
+    margin-right: var(--gap);
+}
+
+.main-carousel .slick-list {
+    height: 100%;
+    width: calc(100% + var(--gap) - 3px);
+    border-radius: var(--border-radius);
+}
+
+.main-carousel .slick-track {
+    height: 100%;
+}
+

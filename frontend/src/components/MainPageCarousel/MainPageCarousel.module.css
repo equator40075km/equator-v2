@@ -1,0 +1,13 @@
+.container {
+    gap: var(--gap);
+
+}
+
+.title {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons {
+    gap: var(--small-gap);
+}

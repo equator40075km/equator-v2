@@ -1,0 +1,27 @@
+.wrapper {
+    gap: var(--gap);
+}
+
+.container {
+    padding: 24px 32px;
+    height: 250px;
+    max-height: 250px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    gap: var(--gap);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+}
+.container img {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: var(--gap);
+}
+.content h2 {
+    color: var(--equator-green);
+}

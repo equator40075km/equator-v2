@@ -1,0 +1,7 @@
+.container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--huge-gap);
+
+    padding: var(--big-gap) var(--side-margin);
+    background-color: var(--equator-green);
+}

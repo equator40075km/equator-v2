@@ -1,0 +1,20 @@
+.container {
+    gap: var(--gap);
+}
+
+.title {
+    gap: var(--gap);
+    grid-template-columns: auto auto;
+    align-items: end;
+    justify-content: start;
+}
+.title p {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.body {
+    gap: var(--gap);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: 55% auto;
+}

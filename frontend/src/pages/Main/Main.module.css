@@ -1,0 +1,4 @@
+.container {
+    gap: var(--huge-gap);
+    margin-bottom: calc(var(--huge-gap) - var(--gap));
+}

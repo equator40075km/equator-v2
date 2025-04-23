@@ -1,0 +1,11 @@
+.container {
+    flex-direction: column;
+    gap: var(--huge-gap);
+    margin-bottom: calc(var(--huge-gap) - var(--gap));
+}
+
+.infiniteScroll {
+    display: flex;
+    flex-direction: column;
+    gap: var(--huge-gap);
+}

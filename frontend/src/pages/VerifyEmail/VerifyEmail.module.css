@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.contentWrapper {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    z-index: 1;
+    padding: 24px 32px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.content h2 {
+    text-align: center;
+    color: var(--equator-green);
+}
+.content a {
+    width: 100%;
+}
+.content button {
+    width: 100%;
+}

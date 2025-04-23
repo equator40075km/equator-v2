@@ -1,0 +1,39 @@
+services:
+  db:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_POSTGRES_NAME}
+      POSTGRES_USER: ${DB_POSTGRES_USER}
+      POSTGRES_PASSWORD: ${DB_POSTGRES_PASSWORD}
+    volumes:
+      - app_db_data:/var/lib/postgresql/data
+    ports:
+      - ${DB_LOCAL_PORT}:5432
+
+  backend:
+    build: backend
+    depends_on:
+      - db
+    env_file: .env
+    command: ./start.sh
+    restart: unless-stopped
+    ports:
+      - ${BACKEND_PORT}:80
+    networks:
+      - default
+
+  frontend:
+    build:
+      context: frontend
+      dockerfile: DockerfileBuild
+    volumes:
+      - frontend_build_data:/frontend/build
+
+volumes:
+  frontend_build_data:
+  app_db_data:
+
+networks:
+  default:
+    driver: bridge

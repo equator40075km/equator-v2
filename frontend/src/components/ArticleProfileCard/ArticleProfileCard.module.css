@@ -1,0 +1,33 @@
+.container {
+    height: 250px;
+    max-height: 250px;
+    gap: var(--gap);
+    grid-template-columns: 60% auto;
+    grid-template-rows: 100%;
+    cursor: pointer;
+    padding: 24px 32px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+}
+.container img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container:hover h2 {
+    text-decoration: underline;
+}
+
+.info {
+    height: 100%;
+    gap: calc(var(--small-gap) / 2);
+    flex-direction: column;
+    justify-content: center;
+}
+.info button {
+    margin-left: auto;
+    color: var(--chakra-colors-red-600);
+}
+.info button:hover {
+    color: var(--chakra-colors-red-500);
+}

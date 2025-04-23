@@ -1,0 +1,12 @@
+.container {
+    gap: var(--small-gap);
+    grid-template-columns: 64px auto;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.avatar {
+    outline-width: 1px;
+    outline-color: var(--equator-green);
+    outline-style: solid;
+}

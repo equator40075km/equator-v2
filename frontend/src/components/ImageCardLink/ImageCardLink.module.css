@@ -1,0 +1,45 @@
+.container {
+    position: relative;
+    height: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+.container:hover .description {
+    transform: translateY(0);
+}
+
+.image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: var(--gap);
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 var(--gap) var(--gap) var(--gap);
+    color: white;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.linkButton {
+    position: absolute;
+    right: var(--gap);
+    bottom: var(--gap);
+    padding: 0;
+}

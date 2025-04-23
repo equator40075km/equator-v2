@@ -1,0 +1,27 @@
+.container {
+    height: 250px;
+    max-height: 250px;
+    width: 100%;
+    gap: var(--gap);
+    grid-template-columns: 35% auto;
+    grid-template-rows: 100%;
+}
+.container:hover h2 {
+    text-decoration: underline;
+    color: var(--equator-green);
+}
+
+.container img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius);
+}
+
+.article {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--small-gap);
+    padding: var(--gap);
+}

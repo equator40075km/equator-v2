@@ -1,0 +1,9 @@
+.wrapper {
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.container {
+    grid-template-columns: repeat(2, 1fr);
+    
+}
