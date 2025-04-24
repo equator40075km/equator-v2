@@ -24,6 +24,7 @@ users = [{
     "username": "admin",
     "email": settings.security.admin_email,
     "hashed_password": get_password_hash(settings.security.admin_password),
+    "disabled": False,
 }]
 
 user_roles = [{"user_id": 1, "role_id": 1}]
