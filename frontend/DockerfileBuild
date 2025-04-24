@@ -11,3 +11,8 @@ COPY public/ /frontend/public/
 COPY src/ /frontend/src/
 
 RUN npm run build
+
+RUN mkdir -p /frontend/tmp-build && cp -R /frontend/build/* /frontend/tmp-build
+
+COPY ./deploy.sh /frontend
+RUN chmod +x /frontend/deploy.sh

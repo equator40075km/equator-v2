@@ -27,11 +27,12 @@ services:
     build:
       context: frontend
       dockerfile: DockerfileBuild
+    env_file: .env
     volumes:
-      - frontend_build_data:/frontend/build
+      - "/var/www/${SECURITY_DOMAIN}/html:/frontend/build"
+    command: ./deploy.sh
 
 volumes:
-  frontend_build_data:
   app_db_data:
 
 networks:
