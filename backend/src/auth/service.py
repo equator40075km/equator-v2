@@ -30,5 +30,6 @@ class AuthService:
             if e.code == 550:
                 return status.HTTP_400_BAD_REQUEST, "Указанной почты не существует"
             raise aiosmtplib.SMTPException
-        except aiosmtplib.SMTPException:
+        except aiosmtplib.SMTPException as e:
+            print(e)
             return status.HTTP_503_SERVICE_UNAVAILABLE, "Ошибка отправки email"
