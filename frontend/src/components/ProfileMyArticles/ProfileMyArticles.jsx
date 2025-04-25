@@ -1,6 +1,6 @@
 import React from 'react'
 import cl from './ProfileMyArticles.module.css'
-import { Button, Grid } from '@chakra-ui/react'
+import { Button, Flex } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 import { useGlobalStore } from '../../store/global'
 import ArticleProfileCard from '../ArticleProfileCard/ArticleProfileCard'
@@ -10,7 +10,7 @@ function ProfileMyArticles() {
     const user = useGlobalStore(state => state.user)
 
     return (
-        <Grid className={cl.container}>
+        <Flex className={cl.container}>
             <Button
                 marginRight='auto'
                 variant='green'
@@ -26,7 +26,7 @@ function ProfileMyArticles() {
                     key={article.id}
                 />
             ))}
-        </Grid>
+        </Flex>
     )
 }
 
